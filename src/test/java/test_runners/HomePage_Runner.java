@@ -19,7 +19,6 @@ import org.junit.runner.RunWith;
         tags = {"@HomePage"}
 
 
-
-        )
+)
 public class HomePage_Runner {
 }
