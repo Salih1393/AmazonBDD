@@ -3,13 +3,15 @@ package step_definitions.step_impl;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pages.HomePage;
+import pages.LaptopPage;
 import utils.ConfigReader;
 import utils.Driver;
 import utils.SeleniumUtils;
 
 public class HomePage_impl {
-    private static WebDriver driver = Driver.getDriver();
+    private WebDriver driver = Driver.getDriver();
     HomePage homePage = new HomePage();
+    LaptopPage laptopPage = new LaptopPage();
 
     public void searchKey(String string) {
         SeleniumUtils.sendKeys(homePage.searchTxt_Box, string);
@@ -24,6 +26,24 @@ public class HomePage_impl {
             case "Search Box":
                 SeleniumUtils.click(homePage.searchTxt_Box);
                 break;
+            case "Open Menu":
+                SeleniumUtils.click(homePage.main_menu);
+                break;
+            case "electronics":
+                SeleniumUtils.click(homePage.electronic_Btn);
+                break;
+            case "computers":
+                SeleniumUtils.click(homePage.computer_Btn);
+                break;
+            case "laptops":
+                SeleniumUtils.click(laptopPage.laptop_Btn);
+                break;
+            case "laptop for work":
+                SeleniumUtils.click(laptopPage.lap_work);
+                break;
+            case "add_to_cart":
+                SeleniumUtils.click(laptopPage.add_to_cart);
+                break;
         }
     }
 
@@ -33,9 +53,28 @@ public class HomePage_impl {
             case "Home":
                 expectedTitle = "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more";
                 break;
+            case "Laptops":
+                expectedTitle = "Laptops | Amazon.com";
+                break;
+            case "Sign In":
+                expectedTitle = "Amazon Sign-In";
+                break;
+
+
         }
 
         return expectedTitle;
+    }
+    public void clickTrendDeal(String deal){
+        switch (deal) {
+            case "first":
+               SeleniumUtils.click(homePage.first_deals);
+                break;
+            case "second":
+
+                break;
+
+        }
     }
 
     public void navigateToHomePage() {

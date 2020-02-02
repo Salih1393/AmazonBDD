@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.eo.Se;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import pages.HomePage;
@@ -12,7 +13,7 @@ import utils.Driver;
 import utils.SeleniumUtils;
 
 public class HomePage_STEPS {
-    private static WebDriver driver = Driver.getDriver();
+    private  WebDriver driver = Driver.getDriver();
     HomePage homePage = new HomePage();
     HomePage_impl homePage_impl = new HomePage_impl();
 
@@ -47,5 +48,17 @@ public class HomePage_STEPS {
 
         Assert.assertEquals(title,Driver.getDriver().getTitle());
     }
+
+    @When("User click {string} trend deal product")
+    public void user_click_trend_deal_product(String string) {
+            homePage_impl.clickTrendDeal(string);
+    }
+
+    @When("User deals item adds to cart")
+    public void user_deals_item_adds_to_cart() {
+        SeleniumUtils.click(homePage.add_to_cart);
+    }
+
+
 
 }

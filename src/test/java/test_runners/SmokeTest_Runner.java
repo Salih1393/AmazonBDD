@@ -16,9 +16,11 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber-reports/cucumberTestReports.json",
         },
         dryRun = false,
-        tags = {"@TrendDealTest"}
+        tags = {"@SmokeTest"}
+
 
 
 )
-public class HomePage_Runner {
+
+public class SmokeTest_Runner {
 }

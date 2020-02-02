@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-02-02T19:05:22.822Z",
+        "start_timestamp": "2020-02-02T21:35:10.150Z",
         "before": [
           {
             "result": {
-              "duration": 9895922600,
+              "duration": 10585944600,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,100 @@
             }
           }
         ],
-        "line": 13,
-        "name": "Verifies home page title and search button",
+        "line": 5,
+        "name": "Verifies home page title",
         "description": "",
-        "id": "home-page-test;verifies-home-page-title-and-search-button;;2",
+        "id": "home-page-test;verifies-home-page-title",
         "after": [
           {
             "result": {
-              "duration": 632503700,
+              "duration": 800240800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2274261200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User opens home page",
+            "match": {
+              "location": "HomePage_STEPS.user_opens_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 203484900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User sees home page logo",
+            "match": {
+              "location": "HomePage_STEPS.user_sees_home_page_logo()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130509400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verifies \"Home\" page title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Home\"",
+                  "offset": 9
+                }
+              ],
+              "location": "HomePage_STEPS.verifies_page_title(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HomePage"
+          },
+          {
+            "name": "@homepageTitle"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-02T21:35:24.225Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9289833300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Verifies search button",
+        "description": "",
+        "id": "home-page-test;verifies-search-button;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 782721700,
               "status": "passed"
             },
             "match": {
@@ -35,10 +121,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1645567000,
+              "duration": 3118544900,
               "status": "passed"
             },
-            "line": 5,
+            "line": 11,
             "name": "User opens home page",
             "match": {
               "location": "HomePage_STEPS.user_opens_home_page()"
@@ -47,40 +133,10 @@
           },
           {
             "result": {
-              "duration": 181561400,
+              "duration": 1008679700,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User sees home page logo",
-            "match": {
-              "location": "HomePage_STEPS.user_sees_home_page_logo()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7391700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Verifies \"Home\" page title",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Home\"",
-                  "offset": 9
-                }
-              ],
-              "location": "HomePage_STEPS.verifies_page_title(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 688896300,
-              "status": "passed"
-            },
-            "line": 8,
+            "line": 12,
             "name": "User click \"Search Box\" button",
             "match": {
               "arguments": [
@@ -95,10 +151,10 @@
           },
           {
             "result": {
-              "duration": 4859796500,
+              "duration": 4070835400,
               "status": "passed"
             },
-            "line": 9,
+            "line": 13,
             "name": "User searches for \"book\" keyword",
             "match": {
               "arguments": [
@@ -113,10 +169,10 @@
           },
           {
             "result": {
-              "duration": 8748700,
+              "duration": 267425300,
               "status": "passed"
             },
-            "line": 10,
+            "line": 14,
             "name": "Verifies title is \"Amazon.com: Books\"",
             "match": {
               "arguments": [
@@ -135,7 +191,7 @@
             "name": "@HomePage"
           },
           {
-            "name": "@homepageAndsearchButtonVerifyTitle"
+            "name": "@SearchButtonTest"
           },
           {
             "name": "@SmokeTest"
@@ -143,11 +199,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-02-02T19:05:40.786Z",
+        "start_timestamp": "2020-02-02T21:35:42.773Z",
         "before": [
           {
             "result": {
-              "duration": 9170065900,
+              "duration": 9319060900,
               "status": "passed"
             },
             "match": {
@@ -155,14 +211,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "Verifies home page title and search button",
+        "line": 18,
+        "name": "Verifies search button",
         "description": "",
-        "id": "home-page-test;verifies-home-page-title-and-search-button;;3",
+        "id": "home-page-test;verifies-search-button;;3",
         "after": [
           {
             "result": {
-              "duration": 672145500,
+              "duration": 1237095100,
               "status": "passed"
             },
             "match": {
@@ -175,10 +231,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1969963900,
+              "duration": 2314878000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 11,
             "name": "User opens home page",
             "match": {
               "location": "HomePage_STEPS.user_opens_home_page()"
@@ -187,41 +243,10 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-4QP1H49J\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat utils.SeleniumUtils.waitForVisibilityOfElement(SeleniumUtils.java:35)\r\n\tat step_definitions.HomePage_STEPS.user_sees_home_page_logo(HomePage_STEPS.java:27)\r\n\tat ✽.User sees home page logo(file:src/test/resources/features/HomePage.feature:6)\r\n",
-              "duration": 4608700,
-              "status": "failed"
+              "duration": 863434500,
+              "status": "passed"
             },
-            "line": 6,
-            "name": "User sees home page logo",
-            "match": {
-              "location": "HomePage_STEPS.user_sees_home_page_logo()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 397100,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "Verifies \"Home\" page title",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Home\"",
-                  "offset": 9
-                }
-              ],
-              "location": "HomePage_STEPS.verifies_page_title(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 402400,
-              "status": "skipped"
-            },
-            "line": 8,
+            "line": 12,
             "name": "User click \"Search Box\" button",
             "match": {
               "arguments": [
@@ -236,10 +261,10 @@
           },
           {
             "result": {
-              "duration": 226600,
-              "status": "skipped"
+              "duration": 3841091400,
+              "status": "passed"
             },
-            "line": 9,
+            "line": 13,
             "name": "User searches for \"computer\" keyword",
             "match": {
               "arguments": [
@@ -254,10 +279,10 @@
           },
           {
             "result": {
-              "duration": 274100,
-              "status": "skipped"
+              "duration": 20108100,
+              "status": "passed"
             },
-            "line": 10,
+            "line": 14,
             "name": "Verifies title is \"Amazon.com: computer\"",
             "match": {
               "arguments": [
@@ -276,7 +301,7 @@
             "name": "@HomePage"
           },
           {
-            "name": "@homepageAndsearchButtonVerifyTitle"
+            "name": "@SearchButtonTest"
           },
           {
             "name": "@SmokeTest"
@@ -284,11 +309,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-02-02T19:05:52.613Z",
+        "start_timestamp": "2020-02-02T21:36:00.373Z",
         "before": [
           {
             "result": {
-              "duration": 9171319900,
+              "duration": 9258820300,
               "status": "passed"
             },
             "match": {
@@ -296,14 +321,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "Verifies home page title and search button",
+        "line": 19,
+        "name": "Verifies search button",
         "description": "",
-        "id": "home-page-test;verifies-home-page-title-and-search-button;;4",
+        "id": "home-page-test;verifies-search-button;;4",
         "after": [
           {
             "result": {
-              "duration": 684900400,
+              "duration": 887068000,
               "status": "passed"
             },
             "match": {
@@ -316,10 +341,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1743217200,
+              "duration": 2538893800,
               "status": "passed"
             },
-            "line": 5,
+            "line": 11,
             "name": "User opens home page",
             "match": {
               "location": "HomePage_STEPS.user_opens_home_page()"
@@ -328,41 +353,10 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-4QP1H49J\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat utils.SeleniumUtils.waitForVisibilityOfElement(SeleniumUtils.java:35)\r\n\tat step_definitions.HomePage_STEPS.user_sees_home_page_logo(HomePage_STEPS.java:27)\r\n\tat ✽.User sees home page logo(file:src/test/resources/features/HomePage.feature:6)\r\n",
-              "duration": 482000,
-              "status": "failed"
+              "duration": 1142108000,
+              "status": "passed"
             },
-            "line": 6,
-            "name": "User sees home page logo",
-            "match": {
-              "location": "HomePage_STEPS.user_sees_home_page_logo()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 492700,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "Verifies \"Home\" page title",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Home\"",
-                  "offset": 9
-                }
-              ],
-              "location": "HomePage_STEPS.verifies_page_title(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 339000,
-              "status": "skipped"
-            },
-            "line": 8,
+            "line": 12,
             "name": "User click \"Search Box\" button",
             "match": {
               "arguments": [
@@ -377,10 +371,10 @@
           },
           {
             "result": {
-              "duration": 307800,
-              "status": "skipped"
+              "duration": 4686581700,
+              "status": "passed"
             },
-            "line": 9,
+            "line": 13,
             "name": "User searches for \"woman dresses\" keyword",
             "match": {
               "arguments": [
@@ -395,10 +389,10 @@
           },
           {
             "result": {
-              "duration": 316000,
-              "status": "skipped"
+              "duration": 19043300,
+              "status": "passed"
             },
-            "line": 10,
+            "line": 14,
             "name": "Verifies title is \"Amazon.com: woman dresses\"",
             "match": {
               "arguments": [
@@ -417,7 +411,111 @@
             "name": "@HomePage"
           },
           {
-            "name": "@homepageAndsearchButtonVerifyTitle"
+            "name": "@SearchButtonTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-02T21:36:18.910Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9370292000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verifies trend deals adding to cart",
+        "description": "",
+        "id": "home-page-test;verifies-trend-deals-adding-to-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 828462600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3117556400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User opens home page",
+            "match": {
+              "location": "HomePage_STEPS.user_opens_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4678061600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click \"first\" trend deal product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"first\"",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePage_STEPS.user_click_trend_deal_product(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1960510200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User deals item adds to cart",
+            "match": {
+              "location": "HomePage_STEPS.user_deals_item_adds_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56400800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Verifies \"Sign In\" page title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In\"",
+                  "offset": 9
+                }
+              ],
+              "location": "HomePage_STEPS.verifies_page_title(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HomePage"
+          },
+          {
+            "name": "@TrendDealTest"
           },
           {
             "name": "@SmokeTest"
@@ -433,6 +531,214 @@
     "tags": [
       {
         "name": "@HomePage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-02-02T21:36:38.931Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9395844600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verifies laptop page title and add laptop to cart",
+        "description": "",
+        "id": "laptop-page-testing;verifies-laptop-page-title-and-add-laptop-to-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 869192900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2509596100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opens home page",
+            "match": {
+              "location": "HomePage_STEPS.user_opens_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3400875800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click \"Open Menu\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Open Menu\"",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePage_STEPS.user_click_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 880584100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click \"electronics\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"electronics\"",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePage_STEPS.user_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2382573500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click \"computers\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"computers\"",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePage_STEPS.user_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4593868900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click \"laptops\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"laptops\"",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePage_STEPS.user_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31425700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verifies \"Laptops\" page title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Laptops\"",
+                  "offset": 9
+                }
+              ],
+              "location": "HomePage_STEPS.verifies_page_title(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6667935500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click \"laptop for work\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"laptop for work\"",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePage_STEPS.user_click_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4164348500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User adds to cart",
+            "match": {
+              "location": "LaptopPage_STEPS.user_adds_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2127336700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User verifies product added",
+            "match": {
+              "location": "LaptopPage_STEPS.user_verifies_laptop_added()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LaptopPage"
+          },
+          {
+            "name": "@laptop_pageVerifyTitle"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Laptop Page Testing",
+    "description": "",
+    "id": "laptop-page-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LaptopPage.feature",
+    "tags": [
+      {
+        "name": "@LaptopPage",
         "type": "Tag",
         "location": {
           "line": 1,

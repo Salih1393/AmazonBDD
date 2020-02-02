@@ -6,8 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
 
+import java.util.List;
+
 public class HomePage {
-    public static WebDriver driver = Driver.getDriver();
+    public  WebDriver driver = Driver.getDriver();
     public HomePage(){
         PageFactory.initElements(driver,this);
     }
@@ -23,4 +25,24 @@ public class HomePage {
 
     @FindBy(xpath = "//span[@class='nav-sprite nav-logo-base']")
     public WebElement homePageLogo;
+
+    @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[34]/li[15]/a")
+    public WebElement electronic_Btn;
+
+    @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[12]/li[18]/a")
+    public WebElement computer_Btn;
+
+    @FindBy(xpath = "//*[@id=\"nav-hamburger-menu\"]")
+    public WebElement main_menu;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[3]/div[4]/div[1]/div[8]/div[1]/div[2]/div[1]/ul[1]/li[1]/span")
+    public WebElement first_deals;
+
+    @FindBy(xpath = "//a[@id='a-autoid-0-announce']")
+    public  WebElement add_to_cart;
+
+
+
+
+
 }

@@ -7,18 +7,24 @@ import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
 
 public class LaptopPage {
-    public static WebDriver driver = Driver.getDriver();
+    public  WebDriver driver = Driver.getDriver();
     public LaptopPage(){
         PageFactory.initElements(driver,this);
     }
 
     @FindBy(xpath = "//a[@class=\"bxc-grid-overlay__link\"]")
     public WebElement laptop_Btn;
-    @FindBy(xpath = "//*[@id=\"contentGrid_351992\"]/div/div[2]/div[2]/div/div/a/img")
+
+    @FindBy(xpath = "//a[@aria-label=\"Work\"]")
     public WebElement lap_work;
-    @FindBy(xpath = "//*[@id=\"add-to-cart-button\"]")
+
+    @FindBy(xpath = "//span[@class='a-button-inner']//input[@id='add-to-cart-button']")
     public WebElement add_to_cart;
-    @FindBy (xpath = "//*[@id=\"huc-v2-order-row-confirm-text\"]/h1")
+
+    @FindBy (xpath = "//div[@id='attachDisplayAddBaseAlert']//h4[@class='a-alert-heading'][contains(text(),'Added to Cart')]")
     public WebElement title_check;
+
+    @FindBy (xpath = "//button[@id='attachSiNoCoverage-announce']")
+    public WebElement ignore_add;
 
 }

@@ -10,5 +10,5 @@ Feature: Laptop Page Testing
     Then Verifies "Laptops" page title
     When User click "laptop for work" button
     And User adds to cart
-    Then User verifies laptop added
+    Then User verifies product added
 
