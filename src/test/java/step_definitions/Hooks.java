@@ -10,12 +10,17 @@ public class Hooks {
 
     @Before
     public void setUp(Scenario scenario){
+
         Driver.getDriver();
+        if(Driver.getDriver() == null){
+            System.out.println("driver null");
+        }
         CurrentScenario = scenario;
     }
 
     @After
     public void  tearDown(){
-        Driver.closeDriver();
+
+        Driver.quitDriver();
     }
 }

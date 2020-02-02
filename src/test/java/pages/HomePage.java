@@ -17,4 +17,10 @@ public class HomePage {
 
     @FindBy(xpath = "//input[@id='twotabsearchtextbox']")
     public WebElement searchTxt_Box;
+
+    @FindBy(xpath = "//div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']")
+    public WebElement searchClick_Btn;
+
+    @FindBy(xpath = "//span[@class='nav-sprite nav-logo-base']")
+    public WebElement homePageLogo;
 }
