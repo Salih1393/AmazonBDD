@@ -130,10 +130,10 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="343" y="139" key="#Project_Structure/0.0.1500.960/3000.0.1920.1040@0.0.1500.960" timestamp="1580492267319" />
-    <state x="404" y="75" key="CommitChangelistDialog2" timestamp="1580655911931">
+    <state x="404" y="75" key="CommitChangelistDialog2" timestamp="1580656750023">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="404" y="75" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1580655911931" />
+    <state x="404" y="75" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1580656750023" />
     <state width="1458" height="256" key="GridCell.Tab.0.bottom" timestamp="1580502674829">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
@@ -150,5 +150,9 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state width="1458" height="256" key="GridCell.Tab.0.right/0.0.1500.960/3000.0.1920.1040@0.0.1500.960" timestamp="1580502674829" />
+    <state x="343" y="214" key="Vcs.Push.Dialog.v2" timestamp="1580656791006">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="343" y="214" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1580656791006" />
   </component>
 </project>
