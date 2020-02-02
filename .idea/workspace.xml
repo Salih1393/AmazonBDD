@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a62ffb76-9254-4eb9-b2e4-f3f8ebedc989" name="Default Changelist" comment="" />
+    <list default="true" id="a62ffb76-9254-4eb9-b2e4-f3f8ebedc989" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AmazonBDD/gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/git.ignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ExcelUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Retry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HomePage.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,6 +130,10 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="343" y="139" key="#Project_Structure/0.0.1500.960/3000.0.1920.1040@0.0.1500.960" timestamp="1580492267319" />
+    <state x="404" y="75" key="CommitChangelistDialog2" timestamp="1580655911931">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="404" y="75" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1580655911931" />
     <state width="1458" height="256" key="GridCell.Tab.0.bottom" timestamp="1580502674829">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
