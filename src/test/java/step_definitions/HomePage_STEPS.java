@@ -45,13 +45,13 @@ public class HomePage_STEPS {
 
     @Then("Verifies title is {string}")
     public void verifies_title_is(String title) {
-
+        SeleniumUtils.waitForPageToLoad(driver);
         Assert.assertEquals(title,Driver.getDriver().getTitle());
     }
 
     @When("User click {string} trend deal product")
     public void user_click_trend_deal_product(String string) {
-            homePage_impl.clickTrendDeal(string);
+        homePage_impl.clickTrendDeal(string);
     }
 
     @When("User deals item adds to cart")

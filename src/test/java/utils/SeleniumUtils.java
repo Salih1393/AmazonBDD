@@ -2,12 +2,15 @@ package utils;
 
 import contstants.SeleniumConstants;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class SeleniumUtils{
@@ -22,23 +25,27 @@ public class SeleniumUtils{
     }
 
     public static void waitForClickability(WebElement element){
-        WebDriverWait explicitWait = new WebDriverWait(driver, SeleniumConstants.EXPLICIT_WAIT_TIME);
+        WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(20));
         explicitWait.until(ExpectedConditions.visibilityOf(element));
     }
     public static void waitForVisibilityOfAll(List<WebElement> list){
-        WebDriverWait explicitWait = new WebDriverWait(driver, SeleniumConstants.EXPLICIT_WAIT_TIME);
+        WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(20));
         explicitWait.until(ExpectedConditions.visibilityOfAllElements(list));
     }
 
     public static void waitForVisibilityOfElement(WebElement element){
-        WebDriverWait explicitWait = new WebDriverWait(driver, SeleniumConstants.EXPLICIT_WAIT_TIME);
+        WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(20));
         explicitWait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public static void waitForPageToLoad(){
-        ExpectedCondition<Boolean> pageLoadCondition = driver -> ((JavascriptExecutor)driver).executeScript("return document.readyState").equals(("complete"));
-        WebDriverWait wait = new WebDriverWait(driver, SeleniumConstants.EXPLICIT_WAIT_TIME);
-        wait.until(pageLoadCondition);
+    public static void waitForPageToLoad(WebDriver driver) {
+        new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(webDriver -> {
+                    if (((RemoteWebDriver) driver).getSessionId() == null) {
+                        throw new NoSuchSessionException("Session is null");
+                    }
+                    return "complete".equals(((JavascriptExecutor) driver).executeScript("return document.readyState"));
+                });
     }
 
     public static void click(WebElement element){
@@ -84,11 +91,4 @@ public class SeleniumUtils{
             }
         }
     }
-
-
-
-
-
-
-
 }

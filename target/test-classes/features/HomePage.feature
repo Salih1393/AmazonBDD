@@ -15,8 +15,8 @@ Feature: Home Page Test
     Examples:
       | keyword       | expectedTitle             |
       | book          | Amazon.com: Books         |
-      | computer      | Amazon.com: computer      |
-      | woman dresses | Amazon.com: woman dresses |
+      | computer      | Amazon.com : computer      |
+      | woman dresses | Amazon.com : woman dresses |
 
 @TrendDealTest @SmokeTest
     Scenario: Verifies trend deals adding to cart

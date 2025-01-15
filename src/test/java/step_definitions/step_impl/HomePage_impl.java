@@ -51,7 +51,7 @@ public class HomePage_impl {
         String expectedTitle = null;
         switch (title) {
             case "Home":
-                expectedTitle = "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more";
+                expectedTitle = "Amazon.com. Spend less. Smile more.";
                 break;
             case "Laptops":
                 expectedTitle = "Laptops | Amazon.com";
@@ -71,9 +71,7 @@ public class HomePage_impl {
                SeleniumUtils.click(homePage.first_deals);
                 break;
             case "second":
-
                 break;
-
         }
     }
 
