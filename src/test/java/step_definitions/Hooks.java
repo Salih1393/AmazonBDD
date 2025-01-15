@@ -20,9 +20,9 @@ public class Hooks {
         CurrentScenario = scenario;
     }
 
-    @After
-    public void  tearDown(){
-
-        Driver.quitDriver();
-    }
+//    @After
+//    public void  tearDown(){
+//
+//        Driver.quitDriver();
+//    }
 }

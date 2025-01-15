@@ -28,8 +28,8 @@ public class HomePage_STEPS {
         SeleniumUtils.waitForVisibilityOfElement(homePage.homePageLogo);
     }
 
-    @When("User click {string} button")
-    public void user_click_button(String string) {
+    @When("User clicks {string} button")
+    public void user_clicks_button(String string) {
         homePage_impl.clickButton(string);
     }
 
@@ -49,8 +49,8 @@ public class HomePage_STEPS {
         Assert.assertEquals(title,Driver.getDriver().getTitle());
     }
 
-    @When("User click {string} trend deal product")
-    public void user_click_trend_deal_product(String string) {
+    @When("User clicks {string} trend deal product")
+    public void user_clicks_trend_deal_product(String string) {
         homePage_impl.clickTrendDeal(string);
     }
 

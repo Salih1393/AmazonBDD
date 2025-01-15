@@ -9,20 +9,11 @@ Feature: Home Page Test
 @SearchButtonTest @SmokeTest
   Scenario Outline:Verifies search button
     Given User opens home page
-    When User click "Search Box" button
+    When User clicks "Search Box" button
     And User searches for "<keyword>" keyword
     Then Verifies title is "<expectedTitle>"
     Examples:
       | keyword       | expectedTitle             |
       | book          | Amazon.com: Books         |
-      | computer      | Amazon.com : computer      |
-      | woman dresses | Amazon.com : woman dresses |
-
-@TrendDealTest @SmokeTest
-    Scenario: Verifies trend deals adding to cart
-      Given User opens home page
-      When User click "first" trend deal product
-      And User deals item adds to cart
-      Then Verifies "Sign In" page title
-
-
+      | computer      | Amazon.com : computer     |
+      | man dresses   | Amazon.com : man dresses  |

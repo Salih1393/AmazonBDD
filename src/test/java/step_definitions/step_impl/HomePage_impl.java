@@ -1,5 +1,6 @@
 package step_definitions.step_impl;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pages.HomePage;
@@ -28,6 +29,9 @@ public class HomePage_impl {
                 break;
             case "Open Menu":
                 SeleniumUtils.click(homePage.main_menu);
+                break;
+            case "See all":
+                SeleniumUtils.click(homePage.see_all_menu);
                 break;
             case "electronics":
                 SeleniumUtils.click(homePage.electronic_Btn);

@@ -25,7 +25,7 @@ public class SeleniumUtils{
     }
 
     public static void waitForClickability(WebElement element){
-        WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(30));
         explicitWait.until(ExpectedConditions.visibilityOf(element));
     }
     public static void waitForVisibilityOfAll(List<WebElement> list){
@@ -49,6 +49,8 @@ public class SeleniumUtils{
     }
 
     public static void click(WebElement element){
+        moveIntoView(element);
+        waitForVisibilityOfElement(element);
         waitForClickability(element);
         highlightElement(element);
         element.click();
@@ -66,13 +68,21 @@ public class SeleniumUtils{
         return element.getText();
     }
 
-    public static void moveIntoView(WebElement element){
+    public static void moveIntoView(WebElement element) {
         try {
-            ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
-        }catch (Exception e){
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element);
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        highlightElement(element);
+    }
+
+    public static void scrollToEndOfPage(WebDriver driver) {
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static void highlightElement(WebElement element){

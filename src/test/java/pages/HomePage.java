@@ -26,10 +26,10 @@ public class HomePage {
     @FindBy(xpath = "//span[@class='nav-sprite nav-logo-base']")
     public WebElement homePageLogo;
 
-    @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[34]/li[15]/a")
+    @FindBy(xpath = "//body/div[@id='hmenu-container']/div[@id='hmenu-canvas']/div[@id='hmenu-content']/ul[1]/ul[1]/li[3]/a[1]/i[1]")
     public WebElement electronic_Btn;
 
-    @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[12]/li[18]/a")
+    @FindBy(xpath = "//body/div[@id='hmenu-container']/div[@id='hmenu-canvas']/div[@id='hmenu-content']/ul[16]/li[5]/a[1]")
     public WebElement computer_Btn;
 
     @FindBy(xpath = "//*[@id=\"nav-hamburger-menu\"]")
@@ -41,8 +41,10 @@ public class HomePage {
     @FindBy(xpath = "//a[@id='a-autoid-0-announce']")
     public  WebElement add_to_cart;
 
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/a[1]/span[1]/span[2]")
+    public  WebElement see_all_deals;
 
-
-
+    @FindBy(xpath = "//body/div[@id='hmenu-container']/div[@id='hmenu-canvas']/div[@id='hmenu-content']/ul[1]/li[22]/a[1]/i[1]")
+    public  WebElement see_all_menu;
 
 }

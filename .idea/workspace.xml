@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a62ffb76-9254-4eb9-b2e4-f3f8ebedc989" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/step_definitions/HomePage_STEPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/HomePage_STEPS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/step_definitions/step_impl/HomePage_impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/step_impl/HomePage_impl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HomePage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumberTestReports.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumberTestReports.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LaptopPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LaptopPage.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/HomePage.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/step_definitions/HomePage_STEPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/step_definitions/HomePage_STEPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/step_definitions/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/step_definitions/Hooks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/step_definitions/step_impl/HomePage_impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/step_definitions/step_impl/HomePage_impl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utils/SeleniumUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/SeleniumUtils.class" afterDir="false" />
     </list>
@@ -63,8 +61,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cucumber Java.Feature: HomePage.executor": "Run",
+    "Cucumber Java.Feature: LaptopPage.executor": "Run",
     "Cucumber Java.Scenario: Verifies home page title.executor": "Run",
+    "Cucumber Java.Scenario: Verifies laptop page title and add laptop to cart.executor": "Run",
     "Cucumber Java.Scenario: Verifies search button.executor": "Run",
+    "Cucumber Java.Scenario: Verifies trend deals adding to cart.executor": "Run",
     "JUnit.HomePage_Runner.executor": "Run",
     "JUnit.LaptopPage_Runner.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -92,7 +93,7 @@
       <recent name="C:\Users\hsyno\IdeaProjects\AmazonBDD\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Verifies trend deals adding to cart">
+  <component name="RunManager" selected="Cucumber Java.Feature: LaptopPage">
     <configuration name="Feature: HomePage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4.5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/HomePage.feature" />
@@ -112,15 +113,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verifies home page title" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: LaptopPage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4.5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/HomePage.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LaptopPage.feature" />
       <option name="GLUE" value="step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AmazonBDD" />
-      <option name="NAME_FILTER" value="^Verifies home page title$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Verifies home page title$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verifies home page title" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: LaptopPage" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verifies laptop page title and add laptop to cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="4.5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LaptopPage.feature" />
+      <option name="GLUE" value="step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AmazonBDD" />
+      <option name="NAME_FILTER" value="^Verifies laptop page title and add laptop to cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Verifies laptop page title and add laptop to cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verifies laptop page title and add laptop to cart" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -171,28 +191,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePage_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AmazonBDD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test_runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test_runners" />
-      <option name="MAIN_CLASS_NAME" value="test_runners.HomePage_Runner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: LaptopPage" />
+        <item itemvalue="Cucumber Java.Scenario: Verifies laptop page title and add laptop to cart" />
+        <item itemvalue="Cucumber Java.Feature: HomePage" />
         <item itemvalue="Cucumber Java.Scenario: Verifies trend deals adding to cart" />
         <item itemvalue="Cucumber Java.Scenario: Verifies search button" />
-        <item itemvalue="Cucumber Java.Feature: HomePage" />
-        <item itemvalue="Cucumber Java.Scenario: Verifies home page title" />
-        <item itemvalue="JUnit.HomePage_Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +220,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580491796682</updated>
-      <workItem from="1736904344103" duration="3073000" />
+      <workItem from="1736904344103" duration="7780000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Salih updated&quot;">
       <created>1580657032346</created>
